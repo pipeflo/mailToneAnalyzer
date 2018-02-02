@@ -1,0 +1,33 @@
+{
+    "name": "Mail Tone Analyzer",
+    "title": "Mail Tone Analyzer",
+    "description": "Application to analyze mail text tone before sending it",
+    "services": [
+      "Verse"
+    ],
+    "extensions": [
+      {
+        "name": "Mail Tone Analyzer",
+        "type": "com.ibm.verse.ext.widget",
+        "payload": {
+          "url": "https://<application-name>.mybluemix.net",
+          "features": [
+            "core"
+          ],
+          "actions": [
+            {
+              "id": "com.ibm.verse.ext.mail.compose.action",
+              "path": "mail.compose",
+              "text": "Mail Tone Analyzer",
+              "title": "Mail Tone Analyzer",
+              "location": "window",
+              "renderParams": {
+                "width": "900",
+                "height": "700"
+              }
+            }
+          ]
+        }
+      }
+    ]
+}
